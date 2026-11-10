@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ========== EDIT 1 of 4: page title (shows in the browser tab) ========== -->
+<title>Systematic Review — Resources</title>
+<meta name="description" content="Slides, documents and registered protocol for our systematic review.">
+<meta name="robots" content="index, follow">
+
+<style>
+  :root{
+    --accent:#156082;
+    --accent-dark:#0e4459;
+    --accent-tint:#e8f1f5;
+    --ink:#1a2226;
+    --ink-soft:#5a6a73;
+    --bg:#ffffff;
+    --card:#f7fafb;
+    --line:#dde6ea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --accent:#4ea3c7;
+      --accent-dark:#7bc2e0;
+      --accent-tint:#13262f;
+      --ink:#e8eef1;
+      --ink-soft:#9aabb4;
+      --bg:#0f1619;
+      --card:#172126;
+      --line:#2a383f;
+    }
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    padding:32px 20px 48px;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:560px;margin:0 auto;}
+
+  header{border-bottom:3px solid var(--accent);padding-bottom:20px;margin-bottom:28px;}
+  h1{
+    font-size:1.45rem;
+    line-height:1.3;
+    margin:0 0 10px;
+    font-weight:650;
+    letter-spacing:-0.01em;
+  }
+  .byline{margin:0;font-size:0.95rem;color:var(--ink-soft);}
+
+  h2{
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.09em;
+    color:var(--ink-soft);
+    font-weight:600;
+    margin:32px 0 12px;
+  }
+
+  /* ---- Link buttons ---- */
+  .links{display:flex;flex-direction:column;gap:12px;}
+  a.link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:17px 18px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--accent);
+    border-radius:10px;
+    text-decoration:none;
+    color:var(--ink);
+    transition:background .15s ease, transform .1s ease;
+  }
+  a.link:hover,a.link:focus{background:var(--accent-tint);outline:none;}
+  a.link:active{transform:scale(.99);}
+  a.link:focus-visible{box-shadow:0 0 0 3px var(--accent-tint),0 0 0 5px var(--accent);}
+  .icon{
+    flex:0 0 34px;height:34px;
+    display:grid;place-items:center;
+    background:var(--accent);
+    color:#fff;
+    border-radius:7px;
+    font-size:0.95rem;
+  }
+  .label{font-weight:600;font-size:1.02rem;display:block;}
+  .sub{font-size:0.85rem;color:var(--ink-soft);display:block;margin-top:2px;}
+  .arrow{margin-left:auto;color:var(--ink-soft);font-size:1.1rem;}
+
+  /* ---- Registration box ---- */
+  .reg{
+    margin-top:14px;
+    padding:14px 16px;
+    background:var(--accent-tint);
+    border-radius:10px;
+    font-size:0.9rem;
+  }
+  .reg strong{display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink-soft);margin-bottom:4px;font-weight:600;}
+  .reg code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:1rem;
+    color:var(--accent-dark);
+    font-weight:600;
+    -webkit-user-select:all;user-select:all;
+  }
+
+  /* ---- Contact ---- */
+  .contact{font-size:0.95rem;}
+  .contact p{margin:0 0 8px;}
+  .contact a{color:var(--accent-dark);text-decoration:none;border-bottom:1px solid var(--line);}
+  .contact a:hover{border-bottom-color:var(--accent);}
+
+  footer{
+    margin-top:40px;padding-top:18px;
+    border-top:1px solid var(--line);
+    font-size:0.8rem;color:var(--ink-soft);
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- ========== EDIT 2 of 4: your study title and author line ========== -->
+    <h1>Full title of your systematic review goes here</h1>
+    <p class="byline">Your Name · Your Department, Your Institution</p>
+    <!-- Delete the <p class="byline"> line above if you don't want a name on the page. -->
+  </header>
+
+  <!-- ========== EDIT 3 of 4: the links ==========
+       Replace each href="#" with the real URL.
+       The data-goatcounter-click value is what shows up in your analytics,
+       so keep those short and distinct. Delete any row you don't need.
+  -->
+  <h2>Resources</h2>
+  <div class="links">
+
+    <a class="link" href="#" target="_blank" rel="noopener"
+       data-goatcounter-click="slides" data-goatcounter-title="Slides">
+      <span class="icon" aria-hidden="true">▤</span>
+      <span>
+        <span class="label">Presentation slides</span>
+        <span class="sub">PDF · the deck from this talk</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+
+    <a class="link" href="#" target="_blank" rel="noopener"
+       data-goatcounter-click="documents" data-goatcounter-title="Documents">
+      <span class="icon" aria-hidden="true">◻</span>
+      <span>
+        <span class="label">Supplementary documents</span>
+        <span class="sub">Search strategy, extraction forms, appendices</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+
+    <a class="link" href="#" target="_blank" rel="noopener"
+       data-goatcounter-click="prospero" data-goatcounter-title="PROSPERO protocol">
+      <span class="icon" aria-hidden="true">✓</span>
+      <span>
+        <span class="label">Registered protocol</span>
+        <span class="sub">PROSPERO · pre-registered methods</span>
+      </span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+
+  </div>
+
+  <!-- PROSPERO number as plain text, so people can write it down without clicking -->
+  <div class="reg">
+    <strong>PROSPERO registration</strong>
+    <code>CRD42026XXXXXX</code>
+  </div>
+
+  <!-- ========== EDIT 4 of 4: contact and ORCID ========== -->
+  <h2>Contact</h2>
+  <div class="contact">
+    <p><a href="mailto:you@institution.edu">you@institution.edu</a></p>
+    <p><a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener"
+          data-goatcounter-click="orcid" data-goatcounter-title="ORCID">ORCID 0000-0000-0000-0000</a></p>
+  </div>
+
+  <footer>
+    Last updated November 2026 · Questions and collaboration enquiries welcome.
+  </footer>
+
+</div>
+
+<!-- ========== ANALYTICS ==========
+     Replace MYCODE below with the site code you chose when signing up at
+     goatcounter.com (if your dashboard is myreview.goatcounter.com, the code is "myreview").
+     Until you do, the script simply does nothing — the page still works.
+-->
+<script data-goatcounter="https://MYCODE.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
