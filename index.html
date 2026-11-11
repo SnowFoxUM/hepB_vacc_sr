@@ -72,6 +72,31 @@
   }
   .affil li{display:flex;gap:8px;margin-bottom:4px;}
   .affil li:last-child{margin-bottom:0;}
+
+  details.affil-wrap{margin-top:4px;}
+  details.affil-wrap summary{
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    cursor:pointer;
+    padding:6px 0;
+    list-style:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  details.affil-wrap summary::-webkit-details-marker{display:none;}
+  details.affil-wrap summary::after{content:" ▾";font-size:0.7em;}
+  details.affil-wrap[open] summary::after{content:" ▴";}
+  details.affil-wrap summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+  details.affil-wrap .affil{margin-top:8px;}
+
+  /* ---- Phone: tighten the header so the links stay near the top ---- */
+  @media (max-width:430px){
+    body{padding:22px 16px 40px;}
+    h1{font-size:1.2rem;}
+    .authors{font-size:0.88rem;margin-bottom:6px;}
+    header{padding-bottom:16px;margin-bottom:22px;}
+    h2{margin:24px 0 10px;}
+    a.link{padding:15px 16px;}
+  }
   .affil .n{
     flex:0 0 auto;
     font-weight:600;
@@ -166,12 +191,15 @@
       Caroline Quach<sup>1</sup>
     </p>
 
-    <ol class="affil">
-      <li><span class="n">1</span><span>Département de microbiologie, infectiologie et immunologie, Université de Montréal</span></li>
-      <li><span class="n">2</span><span>Centre de recherche du CHU Sainte-Justine</span></li>
-      <li><span class="n">3</span><span>Direction des risques biologiques, INSPQ</span></li>
-      <li><span class="n">4</span><span>Service de microbiologie, Département clinique de médecine de laboratoire, CHUM</span></li>
-    </ol>
+    <details class="affil-wrap">
+      <summary>Affiliations</summary>
+      <ol class="affil">
+        <li><span class="n">1</span><span>Département de microbiologie, infectiologie et immunologie, Université de Montréal</span></li>
+        <li><span class="n">2</span><span>Centre de recherche du CHU Sainte-Justine</span></li>
+        <li><span class="n">3</span><span>Direction des risques biologiques, INSPQ</span></li>
+        <li><span class="n">4</span><span>Service de microbiologie, Département clinique de médecine de laboratoire, CHUM</span></li>
+      </ol>
+    </details>
   </header>
 
   <!-- ========== EDIT 3: replace href="#" on the first two links with the real URLs ==========
@@ -221,7 +249,7 @@
   <div class="contact">
     <p><a href="mailto:marie-michelle.ursu@gmail.com">marie-michelle.ursu@gmail.com</a></p>
     <p><a href="https://orcid.org/0009-0004-4541-2567" target="_blank" rel="noopener">ORCID 0009-0004-4541-2567</a></p>
-    <p><a href="https://www.linkedin.com/in/marie-michelle-ursu" target="_blank" rel="noopener">LinkedIn · Marie-Michelle Ursu</a></p>
+    <p><a href="https://www.linkedin.com/in/marie-michelle-ursu" target="_blank" rel="noopener">LinkedIn · marie-michelle-ursu</a></p>
   </div>
 
   <footer>
